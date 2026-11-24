@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PeopleProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Eletkorok" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush></ImageBrush>
+    </Window.Background>
     <Grid>
-
+        <Button Content="Add Új életkor" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="80" Width="250" Click="Button_Click"/>
+        <TextBox x:Name="txtblock" HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="100" Width="350" Background="LightBlue"/>
+        <Popup x:Name="popup"></Popup>
     </Grid>
 </Window>

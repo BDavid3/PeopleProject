@@ -14,9 +14,18 @@ namespace PeopleProject
 
     public partial class MainWindow : Window
     {
+        People people;
         public MainWindow()
         {
             InitializeComponent();
+            people = new People();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtblock.Text != "")
+                people.UjSzemely(int.Parse(txtblock.Text));
+                txtblock.Text = "";
         }
     }
 }
